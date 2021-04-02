@@ -1,5 +1,7 @@
 # React-Redux app
- что бы скачать app, нужно в консоли прописать git clone "url", потом в проекте git init
+ что бы скачать app, нужно в консоли прописать: 
+ git clone https://github.com/MykhailoMishchenko/practice.git,
+потом в проекте git init
 ## 25.03
 создаем реакт app, создаем action creator и reducer
 
