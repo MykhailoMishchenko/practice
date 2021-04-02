@@ -1,0 +1,35 @@
+.App-logo {
+    height: 15vmin;
+    pointer-events: none;
+}
+
+.container {
+    max-width: 1180px;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    font-size: 42px;
+    color: #6a26cd;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
