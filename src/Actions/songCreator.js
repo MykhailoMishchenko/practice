@@ -14,10 +14,10 @@ const addSong = (song) => {
     }
 }
 
-const removeSong = (title) => {
+const removeSong = (song) => {
     return {
         type: "REMOVE_SONG",
-        payload: title
+        payload: song
     }
 }
 

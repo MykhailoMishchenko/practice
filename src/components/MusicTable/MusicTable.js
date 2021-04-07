@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import {selectSong, removeSong} from "../../Actions/songCreator"
 import {v4 as uuidv4} from "uuid"
 
-const MusicTable = ({ songs, selectSong }) => {
+const MusicTable = ({ songs, selectSong, removeSong }) => {
     let key = 1;
     return (
         <>
@@ -31,7 +31,12 @@ const MusicTable = ({ songs, selectSong }) => {
                                             style={{backgroundColor: "#37bdf1"}}
                                             onClick={() => selectSong(song)}
                                             >Select</Button>{' '}
-                                        <Button variant="danger">Delete <i class="far fa-trash-alt"></i></Button>{' '}
+                                        <Button 
+                                            onClick={() => removeSong(song)} 
+                                            variant="danger"
+                                            >
+                                                Delete <i className="far fa-trash-alt"></i>
+                                        </Button>{' '}
                                     </td>
                             </tr>
                             )
@@ -49,5 +54,5 @@ const mapStateToProps = (state) => ({
 
 export default connect(mapStateToProps, {
     selectSong: selectSong,
-    removeSong
+    removeSong: removeSong
 })(MusicTable);
